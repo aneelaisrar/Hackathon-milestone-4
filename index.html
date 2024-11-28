@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone 4:Editable and Dynamic  Resume Builder By Aneela Israr </h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <label for="name"><b>Name</b> </label>
+            <input type="text" id="name" name="name" required="Enter your name"><br>
+
+            <label for="email"><b>Email Address</b> </label>
+            <input type="email" id="email" name="email" required ="Enter your email address"><br>
+            
+            <label for="phone"><b>Mobile Phone Number</b></label>: </label>
+            <input type="tel" id="phone" name="phone" required="Enter your phone number"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend> <h2>Education</h2></legend>
+            <label for="education">Education</label>
+     <textarea id="education" name="education" rows="4" required ="Enter your education details"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Experience</h2></legend>
+            <label for="experience">Experience</label>
+<textarea id="experience" name="experience" rows="4" required placeholder="Enter your work experience"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Skills</h2></legend>
+            <label for="skills">Skills</label>
+             <textarea id="skills" name="skills" rows="4" required placeholder="Enter your skills"></textarea><br>
+        </fieldset>
+
+        <button type="submit">Generate Resume Below</button>
+    </form><br>
+    <!-- Dinamic and editable redsume -->
+    <div id="resume-display"contenteditable="true">
+        <!-- Resume Will Be Generated Below -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
